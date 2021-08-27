@@ -1,0 +1,332 @@
+/* Configuración general de toda la página */
+*{box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif}
+    html {height: 100%;}
+/* Movil */
+/* Barra Superior */
+.barraSuperior {background-color: #201b1b;
+    width: 100%;
+    color: #F3F3F3;
+    font-size: 10px;
+    line-height: 11.72px;
+    font-weight: 400;
+    font-style: normal;
+    display: flex;
+    justify-content: space-between;
+    top: 4px;
+    padding: 3px 3rem;
+    flex-flow: row;
+    display: none;
+    }
+
+.barraSuperior ul {list-style-image: url(../img/vector-barraS.png);
+    display: inline-flex;}
+.barraSuperior ul li { padding: 4px 20px;}
+/* Barra de menú principal */
+header {background-color: #F0A83E;
+    height: 54px;
+    width: 100%;
+    display: flex;
+    flex-flow:row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    }
+.menuPrincipal {display: none;}
+/* Contenido para el área Principal */
+/* Sección Banner */
+.banner {background-image: url(../img/fondo1-mobile.png);
+height: 350px;
+width: 100%;
+background-size: cover;
+background-repeat: no-repeat;
+display: flex;
+flex-flow: column;
+justify-content: center;
+align-items:flex-end;}
+.banner h2 {
+    background-color: #FFFFFF;
+    height: 54px;
+    width: 85vw;
+    color:#3C2313;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 29.3px;
+    font-style: normal;
+    padding: 1rem;
+    margin: 0 1rem;
+    border-radius: 0.3rem;
+    }
+    .banner h4 {
+        height: 54px;
+        color: #3C2313;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 18.75px;
+        font-style: normal;
+        text-align: center;
+        margin: 1rem 1rem 0;}
+    .banner span {
+        background-color: #F0A83E;
+        background-size: 141px 49px;
+        height: 49px;
+        border-radius: 0.3rem;
+        color: #FFFFFF;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 18.75px;
+        font-style: normal;
+        text-transform: uppercase;
+        text-align: center;
+        margin: 0 2rem;
+        padding: 1rem;}
+/* Sección Productos */
+.productosDestacados {
+        display: flex;
+        flex-flow: column;
+        justify-content: flex-end;
+        align-items: center;
+        }
+.productosDestacados h1 {
+    color:#3C2313;
+    font-size: 2.5rem;
+    font-weight: bold;
+    line-height: 47px;
+    font-style: normal;
+    text-align: center;
+    margin: 1rem;}
+.productosDestacados ul {list-style: none;
+color: #666666;
+font-size: 15px;
+font-weight: 400;
+line-height: 17.58px;
+font-style: normal;
+display:inline-flex;
+margin: 0 1rem;}
+.productosDestacados ul li {padding: 0.35rem;}
+/* Productos */
+.SectionProductos {display: flex;
+flex-direction: column;
+justify-content: space-around;
+align-items: center;
+margin-bottom: 4rem;
+margin-top: 4rem;}
+.producto h4 {color:#3C2313;
+    font-size: 15px;
+    font-weight: 900;
+    line-height: 17.58px;
+    font-style: bold;
+    text-align: center;}
+.producto span {color:#F0A83E;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 17.58px;
+    font-style: normal;
+    text-align: center;
+    padding: 0 0 0 7rem;}
+/* Contenido para el pie de página */
+/* Barra de footer */
+.barraFooter{background-color: #3C2313;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;}
+.barraFooter ul {
+    list-style: none;
+    color: #FFFFFF;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 23.44px;
+    font-style: normal;
+    padding: 0.5rem;}
+    .barraFooterSub {color:#8A8787;
+    font-size: 0.7rem;
+    font-weight: 700;
+    line-height: 11.72px;
+    font-style: normal;
+    text-align: center;}
+/* Derechos Reservados */
+h6 {background-color: #222222;
+color: #F3F3F3;
+font-size: 10px;
+font-weight: 700;
+line-height: 11.72px;
+font-style: normal;
+text-align: center;
+padding: 4px;}
+
+@media (min-width:768px) {
+    /* Full-Desktop */
+/* Barra Superior */
+header {box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    }
+header .barraSuperior {background-color: #201b1b;
+    width: 100%;
+    color: #F3F3F3;
+    font-size: 10px;
+    line-height: 11.72px;
+    font-weight: 400;
+    font-style: normal;
+    display: flex;
+    justify-content: space-between;
+    top: 4px;
+    padding: 3px 3rem;
+    flex-flow: row;
+    }
+
+header .barraSuperior ul {list-style-image: url(../img/vector-barraS.png);
+    display: inline-flex;}
+header .barraSuperior ul li { padding: 4px 20px;}
+header img {display: none;}
+/* Barra de menú principal */
+header .menuPrincipal {background-color: #F0A83E;
+    background-image: url(../img/Logo-Cat&Dog.png);
+    background-size: 14rem;
+    background-position: 4rem;
+    background-repeat: no-repeat;
+    width: 100%;
+    color: #F3F3F3;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 15.23px;
+    font-style: normal;
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-end;
+    }
+header .menuPrincipal ul {list-style: none; 
+    display: inline-flex; }
+header .menuPrincipal ul li { padding: 2rem; }
+header .menuPrincipal #fas fa-paw {color: #FFFFFF;}
+
+/* Contenido para el área Principal */
+/* Sección Banner */
+
+main {box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;}
+.banner {background-image: url(../img/fondo1-desktop.png);
+height: 509px;
+width: 100%;
+background-position: bottom;
+background-size: cover;
+background-repeat: no-repeat;
+display: flex;
+flex-flow: column;
+justify-content: center;
+align-items:flex-end;}
+.banner h2 {
+    background-color: #FFFFFF;
+    height: 54px;
+    width: 365px;
+    color:#3C2313;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 35.16px;
+    font-style: normal;
+    padding: 9px;
+    margin: 0 2rem 0;
+    }
+    .banner h4 {
+        height: 54px;
+        color: #3C2313;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 18.75px;
+        font-style: normal;
+        text-align: center;
+        margin: 1rem 7rem 0;}
+    .banner span {
+        background-color: #F0A83E;
+        background-size: 141px 49px;
+        height: 49px;
+        color: #FFFFFF;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 16px;
+        font-style: normal;
+        text-transform: uppercase;
+        text-align: center;
+        margin: 0 9rem;}
+/* Sección Productos */
+.productosDestacados {
+        display: flex;
+        flex-flow: column;
+        justify-content: flex-end;
+        align-items: center;
+        }
+.productosDestacados h1 {
+    color:#3C2313;
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 47px;
+    font-style: normal;}
+.productosDestacados ul {list-style: none;
+color: #666666;
+font-size: 15px;
+font-weight: 400;
+line-height: 17.58px;
+font-style: normal;
+display:inline-flex;}
+.productosDestacados ul li {padding: 1.5rem 1rem;}
+/* Productos */
+.SectionProductos {display: flex;
+flex-direction: row;
+justify-content: space-around;
+margin-bottom: 4rem;
+margin-top: 4rem;}
+.producto h4 {color:#3C2313;
+    font-size: 15px;
+    font-weight: 900;
+    line-height: 17.58px;
+    font-style: bold;
+    text-align: center;}
+.producto span {color:#F0A83E;
+    font-size: 15px;
+    font-weight: 800;
+    line-height: 17.58px;
+    font-style: normal;
+    text-align: center;
+    padding: 0 0 0 7rem;}
+/* Contenido para el pie de página */
+/* Barra de footer */
+.barraFooter{background-color: #3C2313;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    }
+.barraFooter ul {
+    list-style: none;
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 23.44px;
+    font-style: normal;}
+    .barraFooterSub {color:#8A8787;
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 11.72px;
+    font-style: normal;}
+.barraFooter .logo-footer {padding: 2rem;}
+/* Derechos Reservados */
+h6 {background-color: #222222;
+height: 20px;
+color: #F3F3F3;
+font-size: 0.8rem;
+font-weight: 700;
+line-height: 11.72px;
+font-style: normal;
+text-align: center;
+padding: 4px;}
+}
